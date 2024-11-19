@@ -25,7 +25,6 @@ The proposed solution is then based on a pre-trained Word Embeddings (Word2Vec) 
 ### .FEATURE EXTRACTION
 Each document is vectorized into a 434 dimensional vector, then is given as input to a multi-layer perceptron which predicts its text category.
 
-![Alt text](./imgs/Untitled 2024-11-15 19.51.12.excalidraw.svg)
 <img src="./imgs/Untitled 2024-11-15 19.51.12.excalidraw.svg">
 
 
@@ -39,7 +38,8 @@ The 434 dimensional vector is composed by the following parts:
 - **Count numbers in \[1600, 2500\] (scalar integer):** Count the number of dates in the document;
 - **Count numbers not in \[1600, 2500\] (scalar integer):** Count the occurrences of numbers which are not dates in the document;
 - **Count unknown word (scalar integer):** Count of words in the document for which the word embedding used does not have a representation. 
-![Alt text](./imgs/BONUS 2024-11-15 20.25.42.excalidraw.svg)
+
+<img src="./imgs/BONUS 2024-11-15 20.25.42.excalidraw.svg">
 
  #### Mean word vector (300-dim float vector)
 ![Alt text](./imgs/BONUS 2024-11-15 20.50.06.excalidraw.svg)
@@ -48,7 +48,8 @@ The 434 dimensional vector is composed by the following parts:
 127 keywords were selected by using the training documents, they were chosen by looking at the most common words for each text category. 
 A 127 dimensional bag vector is then built, each element (bag) corresponds to the number of occurrences of that keyword in the document. For the words that are not keywords, they are associated to the most similar keyword by using cosine similarity.
 
-![Alt text](./imgs/BONUS 2024-11-15 21.31.05.excalidraw.svg)
+<img src="./imgs/BONUS 2024-11-15 21.31.05.excalidraw.svg">
+
 
 ### .PERFORMANCE
 The accuracy obtained in the test set is 74%.
