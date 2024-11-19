@@ -42,7 +42,8 @@ The 434 dimensional vector is composed by the following parts:
 <img src="./imgs/BONUS 2024-11-15 20.25.42.excalidraw.svg">
 
  #### Mean word vector (300-dim float vector)
-![Alt text](./imgs/BONUS 2024-11-15 20.50.06.excalidraw.svg)
+<img src="./imgs/BONUS 2024-11-15 20.50.06.excalidraw.svg">
+
 
 #### Similarity bag
 127 keywords were selected by using the training documents, they were chosen by looking at the most common words for each text category. 
