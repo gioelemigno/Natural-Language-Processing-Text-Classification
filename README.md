@@ -26,6 +26,7 @@ The proposed solution is then based on a pre-trained Word Embeddings (Word2Vec) 
 Each document is vectorized into a 434 dimensional vector, then is given as input to a multi-layer perceptron which predicts its text category.
 
 ![Alt text](./imgs/Untitled 2024-11-15 19.51.12.excalidraw.svg)
+<img src="./imgs/Untitled 2024-11-15 19.51.12.excalidraw.svg">
 
 
 The 434 dimensional vector is composed by the following parts:
